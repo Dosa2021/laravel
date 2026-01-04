@@ -9,7 +9,7 @@
   <div class='container'>
   <h1>Posts</h1>
     <ul>
-      <li>post</li>
+      <li>{{ $posts[0] }}</li>
       <li>post</li>
       <li>post</li>
     </ul>
