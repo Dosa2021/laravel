@@ -9,9 +9,11 @@
   <div class='container'>
   <h1>Posts</h1>
     <ul>
-      <li>{{ $posts[0] }}</li>
-      <li>post</li>
-      <li>post</li>
+      @forelse($posts as $post)
+        <li>{{ $post }}</li>
+      @empty
+        <li>No post</li>
+      @endforelse
     </ul>
   </div>
 </body>

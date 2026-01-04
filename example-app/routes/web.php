@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $posts = [
-        'Title 0',
-        'Title 1',
-        'Title 2',
-    ];
-    return view('index')->with(['posts' => $posts]) ;
-});
+// Route::get('/', 'App\Http\Controllers\PostController@index');
+Route::get('/', [PostController::class, 'index']);
