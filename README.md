@@ -1,3 +1,5 @@
+./vendor/bin/sail up -d
+
 dosa@dosakennoMacBook-Pro laravel % php artisan sail:install
 Could not open input file: artisan
 
